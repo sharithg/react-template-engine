@@ -1,0 +1,18 @@
+.button__secondary {
+  border: 0;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: var(--input-color);
+  border: 2px solid var(--stroke-lighter-color);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.button__secondary img {
+  width: 12px;
+  margin-right: 10px;
+  object-fit: contain;
+}

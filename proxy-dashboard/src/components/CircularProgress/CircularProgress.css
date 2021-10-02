@@ -1,0 +1,48 @@
+.progress--circle {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.progress--circle:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+}
+.progress--circle:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #63b8ff;
+}
+
+.progress__number {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  line-height: 1;
+  margin-top: -0.75rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+/* .progress--circle.progress--25:after {
+  background-image: linear-gradient(
+      90deg,
+      #ddd 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(270deg, #63b8ff 50%, #ddd 50%, #ddd);
+} */

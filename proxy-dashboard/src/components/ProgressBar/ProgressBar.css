@@ -1,0 +1,49 @@
+.progress__bar {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.progress__content {
+  display: flex;
+  align-items: center;
+}
+
+.progress__text {
+  font-size: 28px;
+}
+
+.progress__text span {
+  font-size: 20px;
+}
+
+.progress__percent {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-left: auto;
+}
+
+.progress {
+  width: 300px;
+  margin-top: 25px;
+}
+
+progress[value] {
+  --webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--primary-color);
+  height: 8px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .progress,
+  .progress__bar {
+    width: 100%;
+  }
+}

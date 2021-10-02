@@ -1,0 +1,9 @@
+export { default as icon_1 } from "./icon_1.png";
+export { default as icon_2 } from "./icon_2.png";
+export { default as icon_3 } from "./icon_3.png";
+export { default as icon_4 } from "./icon_4.png";
+export { default as logo } from "./logo.png";
+export { default as robot_icon } from "./robot_icon.png";
+export { default as twitter } from "./twitter.png";
+export { default as discord } from "./discord.png";
+export { default as logo_name } from "./logo_name.png";
