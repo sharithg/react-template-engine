@@ -20,11 +20,18 @@ async def root(site: NewSite):
     user_id = request_dict['id']
     theme_filename = f'{user_id}.theme.js'
     generated_css = generate_css_theme(theme_dict, theme_dict['icon_url'])
+
+    # write theme into custom theme file
     with open(theme_filename, "w+") as text_file:
         text_file.write(generated_css)
-    
+
+    # move this theme file into theme.js in the react project
     shutil.move(f'{current_dir}/{theme_filename}', f'{current_dir}/proxy-dashboard/theme.js')
+
+    # build the static files
     os.system('cd proxy-dashboard && yarn build')
+
+    # copy build into custom directory
     copy_tree(f'{current_dir}/proxy-dashboard/build', f'{current_dir}/client-sites/{user_id}')
 
 if __name__ == "__main__":
