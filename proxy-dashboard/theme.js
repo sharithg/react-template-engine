@@ -6,5 +6,5 @@ export const theme = {
     "--stroke-lighter-color": "hsl(100, 100%, 50%)",
     "--fill-color": "hsl(100, 100%, 50%)",
     "--input-color": "hsl(100, 100%, 50%)",
-    "--primary-color": "#sadasd",
+    "--primary-color": "#qqqqqq",
      };export const iconUrl = "awdawdawd";

@@ -14,7 +14,6 @@ class InvalidHSLError(Error):
     pass
 
 def handle_exception(e):
-    print(str(e))
     if isinstance(e, InvalidHexError):
         return JSONResponse(status_code=status.HTTP_400_BAD_REQUEST, content={'message': str(e)})
     if isinstance(e, InvalidHSLError):
