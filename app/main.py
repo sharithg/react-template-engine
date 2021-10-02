@@ -4,8 +4,11 @@ import uvicorn
 from models import NewSite
 import os
 from template import generate_css_theme
+<<<<<<< HEAD
 import shutil
 from distutils.dir_util import copy_tree
+=======
+>>>>>>> 541443565bd551a4587863455389b9d4456d660f
 
 app = FastAPI()
 
