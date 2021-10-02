@@ -3,11 +3,11 @@ from utils.exceptions import InvalidHexError, InvalidHSLError
 
 def validate_hex(hex_val):
     if len(hex_val) != 7:
-        raise InvalidHexError
+        raise InvalidHexError(f'Invalid hex value {hex_val}')
 
 def validate_hsl(hsl_val):
     if not re.match(r'hsl\((\d+),\s*([\d.]+)%,\s*([\d.]+)%\)', hsl_val):
-        raise InvalidHSLError
+        raise InvalidHSLError(f'Invalid HSL value {hsl_val}')
 
 def validate_theme_obj(theme_obj):
     for _, css_var in theme_obj.items():
